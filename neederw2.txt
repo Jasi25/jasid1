@@ -1,0 +1,129 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as Needer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Blood Donor & Needer</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donor.html">Register as Donor</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-center">Needer Registration</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="blood-group">Required Blood Group:</label>
+        <select class="form-control" id="blood-group" required>
+          <option>Select required blood group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="hospital" class="btn btn-danger btn-block">Register as Needer</button>
+        </form>
+      </div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as Needer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="index.html">Blood Donor & Needer</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donor.html">Register as Donor</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Needer Registration Form -->
+  <div class="container mt-5">
+    <h2 class="text-center">Needer Registration</h2>
+    <form id="neederForm">
+      <div class="form-group">
+        <label for="neederName">Full Name:</label>
+        <input type="text" class="form-control" id="neederName" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="neederEmail">Email:</label>
+        <input type="email" class="form-control" id="neederEmail" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="requiredBloodGroup">Required Blood Group:</label>
+        <select class="form-control" id="requiredBloodGroup" required>
+          <option value="">Select Required Blood Group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-danger btn-block">Register as Needer</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('neederForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const neederName = document.getElementById('neederName').value;
+      const neederEmail = document.getElementById('neederEmail').value;
+      const requiredBloodGroup = document.getElementById('requiredBloodGroup').value;
+
+      if (neederName && neederEmail && requiredBloodGroup) {
+        alert(`Needer ${neederName} registered successfully!`);
+        // You can also send this data to the server via AJAX
+        // Reset the form
+        this.reset();
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+  </script>
+
+</body>
+</html>
