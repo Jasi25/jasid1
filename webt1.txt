@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donor & Needer - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body  style="background-image:url('home.jpg'); border: 5px solid rosybrown;">
+
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Blood Donor & Needer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="donor.html">Register as Donor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="needer.html">Register as Needer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="search.html">Search Donors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="request.html">Post Blood Request</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page Content -->
+    <div class="container">
+    <h1 style="color: darkred;text: height 20px;">Welcome to My Blood Donor & Needer Platform</h1>
+    <p>Connecting those in need of blood with potential donors easily.</p>
+    <p><strong>Safe blood saves lives</strong> Blood is needed by women with complications during pregnancy and childbirth, children with severe anaemia, often resulting from malaria or malnutrition, accident victims and surgical and cancer patients.
+    </p>
+    <img src="home1.jpg" style="border: 3px solid rgb(0, 110, 255) ; width:100%;">
+  </div>
+  <div class="col-lg-3 col-md-6 footer-links">
+    <h4>QUICK LINKS</h4>
+    <ul>
+      <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+      <li><i class="bx bx-chevron-right"></i> <a href="#">Blood Requirment</a></li>
+      <li><i class="bx bx-chevron-right"></i> <a href="#">Donor Details</a></li>
+      <li><i class="bx bx-chevron-right"></i> <a href="#">Terms Of Use</a></li>
+      <li><i class="bx bx-chevron-right"></i> <a href="#">Legal Disclamers</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5">
+    <p>&copy; 2024 Blood Donor & Needer. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
